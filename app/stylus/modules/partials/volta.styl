@@ -1,0 +1,24 @@
+.volta
+  display inline-block
+  position relative
+  &--visible
+    svg
+      width: 83px;
+      height: 19px;
+      g
+        fill $gray-text
+  &--hidden
+    position absolute
+    left 0
+    top 0
+    height 0
+    overflow hidden
+    transitions()
+    svg
+      width: 83px;
+      height: 19px;
+      g
+        fill #7521E1
+  &:hover
+    .volta--hidden
+      height 100%

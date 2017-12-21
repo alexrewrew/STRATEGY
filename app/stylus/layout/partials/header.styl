@@ -1,0 +1,31 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+header
+  position relative
+  z-index 10
+  min-height 742px
+  &:after
+    pseudo(block, absolute)
+    background $green
+    top 119px
+    bottom 54px
+    left 0
+    right 0
+    z-index 1
+
+.header-img
+  z-index 40
+  max-width 1042px
+  width 100%
+  position absolute
+  left 15px
+  top -71px
+
+.header-logo
+  max-width 117px
+  width 100%
+  display block
+  margin 0 auto
+
+

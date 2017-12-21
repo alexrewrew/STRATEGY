@@ -1,0 +1,56 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+footer
+  padding-top 38px
+  background $black
+  padding-bottom 27px
+  p
+    color $gray-text2
+    font-size: $s14
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom 68px
+  .footer-address
+    color $white
+    a
+      color $white
+      &:hover
+        opacity .5
+    &--mail
+      text-decoration underline
+
+.footer-nav
+  display flex
+  flex-direction row
+  margin-bottom 47px
+  li
+    margin-right 62px
+    a
+      display block
+      font-size: $s18
+      font-weight: 600
+      color $white
+      letter-spacing: 1.1px
+      position relative
+      &:after
+        pseudo(block, absolute)
+        bottom -5px
+        height: 2px
+        left 0
+        right 0
+        background $trans
+        transitions()
+      &:hover
+        &:after
+          background $yellow
+    .active
+      &:after
+        background $yellow
+
+.footer-copyright
+  margin-bottom 0
+  font-size: $s12
+  color $white
+  font-weight: 300;
+  line-height: 2.0;

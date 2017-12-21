@@ -1,0 +1,141 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+section
+  padding-bottom 76px
+  padding-top 115px
+
+article {}
+
+aside {}
+
+main
+  background $white
+  transitions()
+  +mobile()
+    position relative
+    z-index 100
+
+.content
+  position relative
+  z-index 40
+
+.spacer-69
+  width 100%
+  height 69px
+
+.spacer-287
+  width 100%
+  height 287px
+
+.spacer-331
+  width 100%
+  height 331px
+
+.back-yellow
+  background $yellow
+
+
+.back-purple
+  background $purple
+
+.back-green
+  background $green
+
+
+.section-personification
+  background $yellow
+  min-height 633px
+
+.section-human
+  position relative
+  padding-top 0
+  margin-bottom 687px
+  &:after
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    height 848px
+    background $yellow
+  .back-purple
+    position relative
+    padding-top 211px
+    padding-bottom 403px
+    &:after
+      pseudo(block, absolute)
+      background $purple
+      top 0
+      right 0
+      width 100vw
+      bottom 0
+      z-index 1
+    p
+      color $white
+      max-width 360px
+
+.section-friend
+  padding-bottom 0
+  p
+    margin-bottom 4.563rem
+  .back-green
+    padding-top 71px
+    padding-bottom 272px
+    ul
+      li
+        margin-bottom 24px
+        font-weight: 500;
+        line-height: 1.5;
+        color $white
+
+.section-adaptation
+  padding-bottom 0
+  position relative
+  &:after
+    pseudo(block, absolute)
+    left 0
+    right 0
+    bottom 0
+    background $white
+    height 291px
+  .back-purple
+    padding-bottom 199px
+    &:after
+      pseudo(block,absolute)
+      width 100vw
+      left -83px
+      top -400px
+      bottom 0
+      background $purple
+      z-index 1
+    .content
+      p
+        color $white
+        margin-left 35.3%
+        padding-top 4px
+
+.section-example
+  padding-top 173px
+  padding-bottom: 88px;
+
+.section-style
+  background $yellow
+  padding-top: 442px;
+  padding-bottom: 44px;
+  margin-bottom 662px
+
+.section-example-filter
+  padding-top 106px
+
+.section-building
+  background $green
+  margin-top 129px
+  padding-top: 91px
+  padding-bottom: 177px
+  p
+    font-size: $s18
+    font-weight: 500;
+    line-height: 1.44;
+    letter-spacing: 1.1px;
+    color $white
+

@@ -1,0 +1,37 @@
+.heading
+  background $yellow
+  position relative
+  padding 54px 0 20px
+
+  &:after
+    pseudo(block, absolute)
+    background $yellow
+    right 0
+    top 0
+    bottom 0
+    width 100vw
+    z-index 2
+
+.tag-line
+  background $yellow
+  padding: 52px 107px 58px 97px;
+  margin-bottom 81px
+  ul
+    display flex
+    flex-direction row
+    justify-content space-between
+    li
+      font-size: 2.625em
+      font-weight: 500
+      letter-spacing: 1.7px;
+      color $orange;
+
+.filter-example
+  background $yellow
+  padding 39px 97px 38px
+  p
+    font-size: $s20
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom $s26
+

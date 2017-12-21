@@ -1,0 +1,92 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+//@import "../libs/rew-sidenav/sidenav.styl"
+@import "../libs/rew-downnav/downnav.styl"
+
+nav
+  background $white
+  transitions()
+  padding: 30px 0 57px;
+
+.menu
+  list-flex(row)
+  justify-content flex-end
+  align-items center
+  height 100%
+  +mobile()
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+  li
+    margin 0 35px
+    a
+      display block
+      font-size: $s18
+      font-weight: 600
+      color $black
+      letter-spacing: 1.1px
+      position relative
+      &:after
+        pseudo(block, absolute)
+        bottom -5px
+        height: 2px
+        left 0
+        right 0
+        background $trans
+        transitions()
+      &:hover
+        &:after
+          background $yellow
+    .active
+      &:after
+        background $yellow
+
+.nav-mobile
+  display none
+  +mobile()
+    display block
+
+
+
+.nav-icon
+  width 30px
+  height 22px
+  position relative
+  margin 14px 0
+  cursor pointer
+  transitions()
+  transform rotate(0deg)
+  float right
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background $black
+    border-radius 2px
+    opacity 1
+    left 0
+    transform rotate(0deg)
+    transitions()
+    &:nth-child(1)
+      top 0px
+    &:nth-child(2), &:nth-child(3)
+      top 9px
+    &:nth-child(4)
+      top 18px
+
+.nav-icon.open
+  span
+    &:nth-child(1)
+      top 18px
+      width 0%
+      left 50%
+    &:nth-child(2)
+      transform rotate(45deg)
+    &:nth-child(3)
+      transform rotate(-45deg)
+    &:nth-child(4)
+      top 18px
+      width 0%
+      left 50%
