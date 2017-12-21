@@ -4,6 +4,9 @@
 section
   padding-bottom 76px
   padding-top 115px
+  +mobile()
+    padding-top: 75px;
+    padding-bottom 50px
 
 article {}
 
@@ -27,10 +30,16 @@ main
 .spacer-287
   width 100%
   height 287px
+  +mobile()
+    display none
 
 .spacer-331
   width 100%
   height 331px
+  +portrait()
+    display none
+  +mobile()
+    display none
 
 .back-yellow
   background $yellow
@@ -46,11 +55,18 @@ main
 .section-personification
   background $yellow
   min-height 633px
+  +portrait()
+    min-height: 589px;
 
 .section-human
   position relative
   padding-top 0
   margin-bottom 687px
+  +portrait()
+    margin-bottom 0
+    padding-bottom 0
+  +mobile()
+    margin-bottom 0
   &:after
     pseudo(block, absolute)
     top 0
@@ -58,10 +74,17 @@ main
     right 0
     height 848px
     background $yellow
+    +mobile()
+      display none
   .back-purple
     position relative
     padding-top 211px
     padding-bottom 403px
+    +portrait()
+      padding-bottom 211px
+    +mobile()
+      padding-top: 75px;
+      padding-bottom 50px
     &:after
       pseudo(block, absolute)
       background $purple
@@ -70,6 +93,11 @@ main
       width 100vw
       bottom 0
       z-index 1
+      +mobile()
+        left -15px
+        right -15px
+      +landscape()
+        left -30px
     p
       color $white
       max-width 360px
@@ -81,6 +109,8 @@ main
   .back-green
     padding-top 71px
     padding-bottom 272px
+    +mobile()
+      padding-bottom 75px
     ul
       li
         margin-bottom 24px
@@ -98,8 +128,12 @@ main
     bottom 0
     background $white
     height 291px
+    +mobile()
+      height 500px
   .back-purple
     padding-bottom 199px
+    +portrait()
+      padding-bottom 99px
     &:after
       pseudo(block,absolute)
       width 100vw
@@ -108,30 +142,56 @@ main
       bottom 0
       background $purple
       z-index 1
+      +portrait()
+        top -300px
+      +mobile()
+        left -15px
+        right -15px
+        width auto
     .content
       p
         color $white
         margin-left 35.3%
         padding-top 4px
+        +mobile()
+          margin-left 0
 
 .section-example
   padding-top 173px
-  padding-bottom: 88px;
+  padding-bottom: 88px
+  +portrait()
+    padding-top 73px
+  +mobile()
+    padding-top 0
 
 .section-style
   background $yellow
   padding-top: 442px;
   padding-bottom: 44px;
   margin-bottom 662px
+  +portrait()
+    padding-top 115px
+    margin-bottom 442px
+  +mobile()
+    padding-top 75px
+    margin-bottom: 400px;
+  +landscape()
+    margin-bottom 700px
 
 .section-example-filter
   padding-top 106px
+  +mobile()
+    padding-top 75px
 
 .section-building
   background $green
   margin-top 129px
   padding-top: 91px
   padding-bottom: 177px
+  +tablet()
+    padding-bottom: 41px;
+  +portrait()
+    padding-bottom: 41px;
   p
     font-size: $s18
     font-weight: 500;

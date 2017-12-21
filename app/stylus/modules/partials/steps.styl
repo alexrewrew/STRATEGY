@@ -1,4 +1,6 @@
 .scenario-step
+  +mobile()
+    margin-bottom 100px
   &--heading
     font-size: $s20
     line-height: 61px
@@ -7,15 +9,29 @@
     color $white
     margin-bottom 51px
     position relative
+    +mobile()
+      line-height normal
+      padding 17px 0 20px
     b
       font-weight 600
     img
       position absolute
+      +portrait()
+        display none
+      +mobile()
+        display none
+  p
+    position relative
+    z-index 20
+    +tablet()
+      margin-bottom: 46px;
 
 .scenario-step1
   .scenario-step--heading
     font-size $s30
     margin-bottom 120px
+    +mobile()
+      margin-bottom 51px
     img
       bottom: -104px;
       right: -31px;
@@ -23,9 +39,15 @@
 
 .scenario-step2
   margin-top 131px
+  +mobile()
+    margin-top 0
   .scenario-step--heading
     background $yellow
     color $black
+    +tablet()
+      font-size $s16
+    +portrait()
+      font-size $s14
     img
       bottom: -104px;
       right: -30px;
@@ -35,6 +57,10 @@
 
 .scenario-step3
   margin-top 262px
+  +mobile()
+    margin-top 0
+  +portrait()
+    margin-top 0
   .scenario-step--heading
     background $yellow
     color $black
@@ -45,7 +71,13 @@
     margin-bottom 18px
 
 .scenario-step4
+  +portrait()
+    margin-top 152px
+  +mobile()
+    margin-top 0
   .scenario-step--heading
     max-width 263px
+    +mobile()
+      max-width 100%
 
 

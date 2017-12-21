@@ -13,6 +13,15 @@ header
     left 0
     right 0
     z-index 1
+    +tablet()
+      bottom: 134px
+    +mobile()
+      top 90px
+      bottom 20px
+  +portrait()
+    min-height: 606px;
+  +mobile()
+    min-height: 392px;
 
 .header-img
   z-index 40
@@ -21,6 +30,8 @@ header
   position absolute
   left 15px
   top -71px
+  +mobile()
+    top -31px
 
 .header-logo
   max-width 117px

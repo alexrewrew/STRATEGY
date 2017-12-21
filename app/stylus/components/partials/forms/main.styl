@@ -2,14 +2,24 @@ form
   display flex
   flex-direction row
   justify-content space-between
-  select
+  +mobile()
+    flex-wrap wrap
+  .select-container
     max-width 360px
+    +tablet()
+      max-width 300px
+    +portrait()
+      max-width 210px
+    +mobile()
+      max-width 100%
   .button
     max-width 160px
     background $purple
     cursor pointer
     margin-bottom 0
     max-height: 43px;
+    +mobile()
+      max-width 100%
     &:hover
       background #480B71
       color $white

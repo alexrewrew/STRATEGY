@@ -7,13 +7,22 @@ h1
   margin-bottom 2.5rem
   position relative
   z-index 20
+  +portrait()
+    font-size 3.750rem
+  +mobile()
+    font-size 2.250rem
+
 
 h2
   font(4.375rem, $black, 600, normal)
-  font-size: 70px;
   letter-spacing: 3px;
   color: $pink
   margin-bottom 53px
+  +tablet()
+    font-size 3.750rem
+  +mobile()
+    font-size 2.250rem
+
 
 h2.h2-small
   font-size: 3.125rem
@@ -24,14 +33,21 @@ h3
   font(2.5rem, $black, 600, normal)
   margin-bottom 3.188rem
   letter-spacing: 2.4px;
+  +mobile()
+    word-wrap break-word
+    font-size 1.875rem
 
 h3.h3-big
   font-size: 3.125rem
   margin-bottom: 58px;
+  +mobile()
+    font-size 1.875rem
 
 h3.h3-small
   font-size: 30px;
   letter-spacing: 1.3px;
+  +mobile()
+    font-size 1.875rem
 
 h4
   font(2.125rem, $pink, 600, normal)
@@ -39,18 +55,11 @@ h4
   text-align center
   letter-spacing: 1.5px;
 
-
-h5
-  font(1.25rem, $black, 500, normal)
-  margin-bottom 1.5rem
-
-h6
-  font(1.125rem, $black, 400, normal)
-  margin-bottom 1.25rem
-
 p
   font(1rem, $black, 300, 1.5)
   margin-bottom 6.688rem
+  +mobile()
+    margin-bottom: 3.188rem;
 
 hr
   border: 0;

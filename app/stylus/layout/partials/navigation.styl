@@ -8,6 +8,12 @@ nav
   background $white
   transitions()
   padding: 30px 0 57px;
+  +mobile()
+    padding 15px 0
+
+.nav-panel
+  +mobile()
+    padding-top 0
 
 .menu
   list-flex(row)
@@ -16,10 +22,12 @@ nav
   height 100%
   +mobile()
     flex-direction column
-    justify-content flex-start
-    align-items flex-start
+    justify-content center
+    align-items center
   li
     margin 0 35px
+    +mobile()
+      margin 20px 0
     a
       display block
       font-size: $s18
@@ -27,6 +35,8 @@ nav
       color $black
       letter-spacing: 1.1px
       position relative
+      +mobile()
+        font-size $s32
       &:after
         pseudo(block, absolute)
         bottom -5px
@@ -53,7 +63,7 @@ nav
   width 30px
   height 22px
   position relative
-  margin 14px 0
+  //margin 14px 0
   cursor pointer
   transitions()
   transform rotate(0deg)

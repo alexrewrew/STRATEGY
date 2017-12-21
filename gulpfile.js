@@ -69,7 +69,7 @@ gulp.task("scripts2", function () {
         "app/libs/chosen/chosen.jquery.js",
         // "app/libs/chosen-image/chosenImage/chosenImage.jquery.js",
         // "app/libs/iCheck/icheck.js",
-        // "app/libs/slick-carousel/slick/slick.js",
+        "app/libs/slick-carousel/slick/slick.js",
         // "app/libs/remodal/dist/remodal.js",
         // "app/libs/modaal/dist/js/modaal.js",
         // "app/libs/magnific-popup/dist/jquery.magnific-popup.js",

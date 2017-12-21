@@ -6,7 +6,7 @@ select
   -moz-appearance none
   width 100%
   background $white
-  border 1px solid $black
+  border none
   border-radius 0
   display block
   padding 11px 15px 12px
@@ -14,7 +14,6 @@ select
   transitions()
   &:focus
     outline none
-    border 1px solid green
 
 .select-container
   display block
@@ -24,5 +23,8 @@ select
   max-width unset
   &:after
     triangle($black, down, 6px)
-    top calc(50% - 3px)
+    top calc(50% - 10px)
     right 15px
+    display none
+    +mobile()
+      display block

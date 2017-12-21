@@ -2,7 +2,9 @@
   background $yellow
   position relative
   padding 54px 0 20px
-
+  +mobile()
+    padding-top 30px
+    padding-bottom 1px
   &:after
     pseudo(block, absolute)
     background $yellow
@@ -16,19 +18,42 @@
   background $yellow
   padding: 52px 107px 58px 97px;
   margin-bottom 81px
+  +tablet()
+    padding 42px 60px 48px
+  +portrait()
+    padding 42px 40px 48px
+  +mobile()
+    padding 40px 30px 30px
   ul
     display flex
     flex-direction row
     justify-content space-between
+    +mobile()
+      flex-wrap: wrap;
     li
-      font-size: 2.625em
+      font-size: 2.625rem
       font-weight: 500
       letter-spacing: 1.7px;
       color $orange;
+      +portrait()
+        font-size 1.875rem
+      +mobile()
+        font-size 1.125rem
+        flex 1 1 50%
+        max-width 50%
+        margin-bottom 10px
+      +landscape()
+        text-align center
 
 .filter-example
   background $yellow
   padding 39px 97px 38px
+  +tablet()
+    padding 39px 60px 38px
+  +portrait()
+    padding 39px 30px 38px
+  +mobile()
+    padding 30px 20px 48px
   p
     font-size: $s20
     font-weight: 500;
