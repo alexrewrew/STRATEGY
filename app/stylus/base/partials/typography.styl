@@ -11,6 +11,7 @@ h1
     font-size 3.750rem
   +mobile()
     font-size 2.250rem
+    letter-spacing 1px
 
 
 h2
@@ -21,13 +22,19 @@ h2
   +tablet()
     font-size 3.750rem
   +mobile()
-    font-size 2.250rem
+    font-size 2rem
+    letter-spacing 1px
+    word-wrap break-word
 
 
 h2.h2-small
   font-size: 3.125rem
   letter-spacing: 2.1px;
   max-width 291px
+  +mobile()
+    font-size 2rem
+    letter-spacing 1px
+    word-wrap break-word
 
 h3
   font(2.5rem, $black, 600, normal)
@@ -36,18 +43,21 @@ h3
   +mobile()
     word-wrap break-word
     font-size 1.875rem
+    letter-spacing 1px
 
 h3.h3-big
   font-size: 3.125rem
   margin-bottom: 58px;
   +mobile()
     font-size 1.875rem
+    letter-spacing 1px
 
 h3.h3-small
   font-size: 30px;
   letter-spacing: 1.3px;
   +mobile()
     font-size 1.875rem
+    letter-spacing 1px
 
 h4
   font(2.125rem, $pink, 600, normal)
