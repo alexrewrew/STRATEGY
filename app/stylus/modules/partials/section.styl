@@ -60,3 +60,32 @@
     line-height: 1.2;
     margin-bottom $s26
 
+.factor
+  position relative
+  top -30px
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  &-container
+    flex 1 1 33.33333%
+    max-width 33.33333%
+    display flex
+    align-items center
+    margin-bottom 93px
+    +portrait()
+      flex 1 1 50%
+      max-width 50%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+    &--image
+      flex 1 1 130px
+      max-width 130px
+    &--text
+      flex 1 1 calc(100% - 130px)
+      max-width calc(100% - 130px)
+      color $white
+      font-size: $s18
+      font-weight: 600
+      line-height: 1.33;
+

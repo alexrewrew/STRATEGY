@@ -101,6 +101,10 @@ main
     p
       color $white
       max-width 360px
+    h2
+      max-width 660px
+      +tablet()
+        max-width 550px
 
 .section-friend
   padding-bottom 0
@@ -206,6 +210,8 @@ main
   padding-bottom 74px
   p
     margin-left: 25.5%;
+    +mobile()
+      margin-left 0
 
 .section-customer
   padding-top 0
@@ -227,10 +233,15 @@ main
     background $white
     height: 498px;
     z-index 1
+    +mobile()
+      height: 286px;
   .back-purple
     padding 69px 174px 74px 94px
     margin-bottom 165px
     background $purple2
+    +mobile()
+      padding-left 30px
+      padding-right 30px
     h2.h2-small
       max-width 100%
       margin-bottom: 68px;

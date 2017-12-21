@@ -31,17 +31,26 @@
     transitions()
     img
       transitions()
+    +mobile()
+      width 41px
+      height 41px
+      img
+        width 25%
     &:hover
       background $pink2
 
 
   .arrow.left
     left -41px
+    +mobile()
+      left -15px
     &:hover
       img
         transform translateX(-15px)
   .arrow.right
     right -41px
+    +mobile()
+      right -15px
     &:hover
       img
         transform translateX(15px)
@@ -99,6 +108,14 @@
   .slide
     text-align center
     padding 0 148px
+    +portrait()
+      padding 0 100px
+
+    +mobile()
+      padding 0 30px
+
+    +landscape()
+      padding 0 50px
     img
       width 100%
     a
@@ -108,3 +125,5 @@
       color $black
       font-weight: 700;
       line-height: 1.5;
+      &:hover
+        color #AC7EC1
