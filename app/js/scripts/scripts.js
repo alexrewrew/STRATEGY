@@ -10,13 +10,13 @@ $(document).ready(function () {
     // });
     //
     // // SLICK SLIDER
-    // $(".slider-full").slick({
-    //     // slide: ".slide",
-    //     prevArrow: "<div class='arrow left'><i class='fa fa-angle-left'></i></div>",
-    //     nextArrow: "<div class='arrow right'><i class='fa fa-angle-right'></i></div>",
-    //     dots: true
-    //
-    // });
+    $(".slider-full").slick({
+        // slide: ".slide",
+        prevArrow: "<div class='arrow left'><img src='img/slides/arrow-left.svg'></div>",
+        nextArrow: "<div class='arrow right'><img src='img/slides/arrow-right.svg'</div>",
+        dots: true
+
+    });
     //
     // $(".slider-two").slick({
     //     // slide: ".slide",

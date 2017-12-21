@@ -16,21 +16,35 @@
 
 .slider
   position relative
-  overflow hidden
-  margin-bottom 1rem
+  padding-bottom: 78px;
   .arrow
     position absolute
-    text-align center
     z-index 100
-    top 41%
+    top calc(50% - 41px)
     cursor pointer
-    .fa
-      font-size 2rem
+    background $pink
+    width 82px
+    height 82px
+    display flex
+    align-content center
+    justify-content center
+    transitions()
+    img
+      transitions()
+    &:hover
+      background $pink2
+
 
   .arrow.left
-    left 0
+    left -41px
+    &:hover
+      img
+        transform translateX(-15px)
   .arrow.right
-    right 0
+    right -41px
+    &:hover
+      img
+        transform translateX(15px)
 
   .slide
     display flex
@@ -38,7 +52,6 @@
     align-items center
     height 100%
     overflow hidden
-    margin 0 15px
     &:focus
       outline none
 
@@ -62,14 +75,36 @@
       margin 5px
       button
         padding 0
-        width 15px
-        height 15px
+        width 10px
+        height 10px
         border-radius 50%
-        background $gray
+        background $pink
+        opacity .22
         color $trans
+        transitions()
         &:hover
-          background $black
-          opacity .6
+          opacity 1
     .slick-active
       button
-        background $black
+        opacity 1
+
+
+.slider-container
+  background $white
+  box-shadow: 2px 2px 33px 7px rgba(146, 112, 173, 0.14);
+  padding 66px 0 46px
+  margin 84px 0
+  position relative
+  z-index 30
+  .slide
+    text-align center
+    padding 0 148px
+    img
+      width 100%
+    a
+      display inline-block
+      margin-bottom 49px
+      font-size: 16px;
+      color $black
+      font-weight: 700;
+      line-height: 1.5;

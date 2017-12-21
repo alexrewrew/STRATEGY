@@ -199,3 +199,54 @@ main
     letter-spacing: 1.1px;
     color $white
 
+
+//
+
+.section-complex
+  padding-bottom 74px
+  p
+    margin-left: 25.5%;
+
+.section-customer
+  padding-top 0
+  background $yellow
+  position relative
+  padding-bottom 0
+  &:before
+    pseudo(block, absolute)
+    top 0
+    left 0
+    right 0
+    background $white
+    height 176px
+  &:after
+    pseudo(block, absolute)
+    bottom 0
+    left 0
+    right 0
+    background $white
+    height: 498px;
+    z-index 1
+  .back-purple
+    padding 69px 174px 74px 94px
+    margin-bottom 165px
+    background $purple2
+    h2.h2-small
+      max-width 100%
+      margin-bottom: 68px;
+    p
+      color $white
+
+
+.section-factor
+  padding-top: 82px;
+  padding-bottom 0
+  .back-purple
+    margin-top 50px
+    background $purple2
+.section-conclusion
+  padding-top 28px
+  background $purple2
+  padding-bottom 179px
+  p
+    color $white
